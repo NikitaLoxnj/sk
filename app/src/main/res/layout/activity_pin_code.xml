@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backstreet"
+    android:backgroundTint="#30CCE1"
+    android:backgroundTintMode="multiply"
+    tools:context=".pinCode">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="Создайте пин-код"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/pin1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center|start"
+            android:background="@drawable/nofill_ring"
+            android:cursorVisible="false"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/pin2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/nofill_ring"
+            android:cursorVisible="false"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/pin3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/nofill_ring"
+            android:cursorVisible="false"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/pin4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center|end"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/nofill_ring"
+            android:cursorVisible="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_pole_back"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <Button
+            android:id="@+id/key1"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="1"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/key2"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="2"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@+id/key1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/key3"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="3"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/key2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/key4"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="4"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/key1" />
+
+        <Button
+            android:id="@+id/key5"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="5"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@+id/key4"
+            app:layout_constraintTop_toBottomOf="@+id/key2" />
+
+        <Button
+            android:id="@+id/key6"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="6"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/key5"
+            app:layout_constraintTop_toBottomOf="@+id/key3" />
+
+        <Button
+            android:id="@+id/key7"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="7"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/key4" />
+
+        <Button
+            android:id="@+id/key8"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="8"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/key7"
+            app:layout_constraintTop_toBottomOf="@+id/key5" />
+
+        <Button
+            android:id="@+id/key9"
+            android:layout_width="250px"
+            android:layout_height="200px"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/keyboard_st"
+            android:fontFamily="@font/montserrat"
+            android:text="9"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/key8"
+            app:layout_constraintTop_toBottomOf="@+id/key6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
